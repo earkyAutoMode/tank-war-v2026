@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>坦克大战 v2026</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 引入 Pixel 字体 (可选，这里使用系统备选) -->
+    <style>
+        @font-face {
+            font-family: 'PressStart2P';
+            src: url('https://fonts.gstatic.com/s/pressstart2p/v15/e3t4svO8DU86_ar1boWURdf-iaK2ndS_m06G.woff2') format('woff2');
+        }
+    </style>
+</head>
+<body>
+    <div id="game-container">
+        <div id="ui-layer">
+            <div class="stat-box">得分: <span id="score">0</span></div>
+            <div class="stat-box">等级: <span id="level">1</span></div>
+            <div class="stat-box">敌人剩余: <span id="enemy-count">0</span></div>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+        <div id="overlay" class="hidden">
+            <h1 id="message">GAME OVER</h1>
+            <p>得分: <span id="final-score">0</span></p>
+            <button id="restart-btn">重新开始</button>
+        </div>
+        <div id="start-screen">
+            <h1>坦克大战 v2026</h1>
+            <p>操作说明：WASD/方向键移动，空格射击</p>
+            <button id="start-btn">开始游戏</button>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
